@@ -34,3 +34,65 @@
     font-family: 'Bitter-rose';
     src: url('./fonts//bitter-rose/Bitter Rose.ttf');
 }
+
+@theme {
+    --font-bitter-rose: 'Bitter-rose';
+    --font-Chillax-light: 'Chillax-light';
+    --font-Chillax-medium: 'Chillax-medium';
+    --font-Chillax-regular: 'Chillax-regular';
+    --font-Chillax-semibold: 'Chillax-semibold';
+    --font-Chillax-bold: 'Chillax-bold';
+    --color-default: #FFFFFF;
+    --color-muted: rgba(255, 255, 255, 0.8);
+    --color-primary: #FACE8D;
+    --color-inverse: #081212;
+    --color-default-bg: #050505;
+    --color-primary-bg: #F8D49E;
+    --color-default-border: rgba(255, 255, 255, 0.1);
+    --text-sm: 14px;
+    --text-sm--line-height: 140%;
+    --text-default-size: clamp(14px, 0.953vw, 16px);
+    --text-default--line-height: 160%;
+    --text-medium: clamp(14px, 1.107vw, 18px);
+    --text-medium--line-height: 160%;
+    --text-large: clamp(16px, 1.19vw, 20px);
+    --text-large--line-height: 160%;
+    --text-xlarge: clamp(16px, 1.43vw, 24px);
+    --text-xlarge--line-height: 160%;
+    --text-heading-xlarge: clamp(48px, 9.5vw, 160px);
+    --text-heading-xlarge--line-height: 90%;
+    --text-heading-medium: clamp(32px, 4.76vw, 80px);
+    --text-heading-medium--line-height: 100%;
+    --text-heading-medium-italic: clamp(32px, 4.76vw, 80px);
+    --text-heading-medium-italic--line-height: 90%;
+    --text-heading-medium-italic--font-style: italic;
+    --text-heading-small: clamp(24px, 3.809vw, 64px);
+    --text-heading-small--line-height: 70%;
+}
+
+@layer components {
+    h2 {
+        font-size: clamp(20px, 2.381vw, 40px);
+        line-height: 100%;
+    }
+
+    h3 {
+        font-size: clamp(18px, 1.905vw, 32px);
+        line-height: 100%;
+    }
+
+    h4 {
+        font-size: clamp(16px, 1.43vw, 24px);
+        line-height: 100%;
+    }
+
+    h5 {
+        font-size: clamp(16px, 1.19vw, 20px);
+        line-height: 100%;
+    }
+
+    h6 {
+        font-size: clamp(14px, 1.107vw, 18px);
+        line-height: 160%;
+    }
+}
