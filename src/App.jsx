@@ -1,8 +1,9 @@
+import HomePage from "./homepage/HomePage";
 
 function App() {
   return (
     <>
-      <h1 className="\'">nique</h1>
+      <HomePage />
     </>
   );
 }
