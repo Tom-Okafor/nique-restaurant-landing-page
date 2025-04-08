@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export default function MenuDropDown() {
   return (
-    <section className="absolute rounded-[10px] w-[min(14.881vw,250px)] flex-col gap-[0.8vh] bg-default py-[min(16px,1.6vh)] px-[min(24px,1.429vw)] left-[23.81vw] bottom-[9vh]">
+    <section className="absolute rounded-[10px] w-[150px] mini:w-[clamp(200px,14.881vw,250px)] flex-col gap-[0.8vh] bg-default py-[min(16px,1.6vh)] px-[min(24px,1.429vw)] left-[23.81vw] bottom-[9vh] animate-appear-dropdown">
       <h6 className="text-inverse font-Chillax-regular">Opening Hours</h6>
       <ul className="flex flex-col gap-[min(8px,0.8vh)] w-full">
         <li className="w-full flex justify-between">
