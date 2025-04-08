@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 
+const text = "nique.";
+const splitText = text.split("");
 export default function Logo() {
-  const text = "nique.";
-  const splitText = text.split("");
-  const letterState = Array.from({ length: splitText.length }, () => false);
-  const [isLetterVisible, setLetterVisibility] = useState(letterState);
+  const [isLetterVisible, setLetterVisibility] = useState(
+    Array(splitText.length).fill(false)
+  );
   useEffect(() => {
     let index = 0;
     const animateText = () => {
@@ -20,7 +21,7 @@ export default function Logo() {
       }
     };
     animateText();
-  }, [splitText]);
+  }, []);
   return (
     <h3 className="font-[Chillax-medium] text-white z-10 mb-[24.5vh] overflow-hidden">
       {splitText.map((text, index) => {

@@ -70,6 +70,7 @@
     --text-heading-small--line-height: 70%;
     --animate-appear-dropdown: appearDropdown 400ms ease-in-out forwards;
     --breakpoint-mini: 20rem;
+    --animate-scale-text: scaleText 1s cubic-bezier(0.8, 2, 0, 0.6) 1s both;
 }
 
 @keyframes appearDropdown {
@@ -92,6 +93,28 @@
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
     }
+}
+
+@keyframes scaleText {
+    from {
+        opacity: 0;
+        transform: scale(0.2);
+        -webkit-transform: scale(0.2);
+        -moz-transform: scale(0.2);
+        -ms-transform: scale(0.2);
+        -o-transform: scale(0.2);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform-origin: center;
+    }
+
 }
 
 @layer components {
