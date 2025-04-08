@@ -1,9 +1,50 @@
+import { useEffect, useState } from "react";
+
 export default function HeroText() {
+  const minorHeadingText = "The pure taste of";
+  const headingTextArray = minorHeadingText.split(" ");
+  const stateArray = Array.from(
+    { length: headingTextArray.length },
+    () => false
+  );
+  const [isSpanHidden, setIsSpanHidden] = useState(stateArray);
+  useEffect(() => {
+    let index = 0;
+    let newArray;
+    const liftSpan = () => {
+      index++;
+      setIsSpanHidden((prev) => {
+        newArray = [...prev];
+        newArray[index - 1] = true;
+        return newArray;
+      });
+      if (index < stateArray.length) {
+        setTimeout(() => {
+          liftSpan();
+        }, 200);
+      }
+    };
+    liftSpan();
+  }, [stateArray]);
   return (
     <section className="flex flex-col gap-[clamp(16px,3.2vh,32px)] items-center my-auto z-10 mb-[20.8vh]">
       <h1 className="flex flex-col items-center">
-        <span className="text-primary text-heading-medium-italic font-normal font-bitter-rose">
-          The pure taste of{" "}
+        <span className="text-primary text-heading-medium-italic font-normal font-bitter-rose flex overflow-y-hidden gap-4 leading-[100%]">
+          {headingTextArray.map((eachText, index) => {
+            return (
+              <div
+                key={index}
+                className="inline-block duration-500 ease-out"
+                style={{
+                  transform: isSpanHidden[index]
+                    ? "translateY(0)"
+                    : "translateY(105%)",
+                }}
+              >
+                {eachText}
+              </div>
+            );
+          })}
         </span>
         <span className="text-default font-Chillax-medium text-heading-xlarge">
           Thailand
