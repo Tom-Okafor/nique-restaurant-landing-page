@@ -22,8 +22,8 @@ export default function MenuBar({
       </div>
       <button
         className="uppercase rounded-full text-default font-Chillax-medium tracking-[1px] text-sm leading-[100%] bg-[#111111] hover:bg-primary hover:text-inverse px-[clamp(16px,1.429vw,24px)] py-[min(16px,1.6vh)] duration-300 cursor-pointer"
-        onMouseOver={handleBookTableButtonMouseOver}
-        onMouseOut={handleBookTableButtonMouseOut}
+        onPointerOver={handleBookTableButtonMouseOver}
+        onPointerOut={handleBookTableButtonMouseOut}
       >
         book a table
       </button>

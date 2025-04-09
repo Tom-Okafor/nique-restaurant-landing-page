@@ -20,7 +20,7 @@ export default function Logo() {
         setTimeout(animateText, 200);
       }
     };
-    animateText();
+    setTimeout(animateText, 2500)
   }, []);
   return (
     <h3 className="font-[Chillax-medium] text-white z-10 mb-[24.5vh] overflow-hidden">

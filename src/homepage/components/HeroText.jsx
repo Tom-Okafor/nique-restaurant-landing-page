@@ -48,7 +48,7 @@ export default function HeroText() {
           Thailand
         </span>
       </h1>
-      <p className="font-Chillax-regular text-default text-xlarge text-center max-w-[300px] md:max-w-[35.7vw]">
+      <p className="font-Chillax-regular text-default text-xlarge text-center max-w-[300px] md:max-w-[35.7vw] animate-shrink-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore.
       </p>

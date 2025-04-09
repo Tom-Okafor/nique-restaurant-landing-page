@@ -70,7 +70,10 @@
     --text-heading-small--line-height: 70%;
     --animate-appear-dropdown: appearDropdown 400ms ease-in-out forwards;
     --breakpoint-mini: 20rem;
-    --animate-scale-text: scaleText 1s cubic-bezier(0.8, 2, 0, 0.6) 1s both;
+    --animate-scale-text: scaleText 1s cubic-bezier(0.8, 2, 0, 0.6) 0.8s both;
+    --animate-shrink-text: shrinkText 600ms ease-out 1.2s both;
+    --animate-scale-delay: scaleDelay 1s cubic-bezier(0.3, 0.5, 0, 1) 1.6s both;
+    --animate-background-shift: bgShift 0.8s ease-in 1.9s both;
 }
 
 @keyframes appearDropdown {
@@ -114,6 +117,70 @@
         -o-transform: scale(1);
         transform-origin: center;
     }
+
+}
+
+@keyframes shrinkText {
+    from {
+        opacity: 0;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+        line-height: 300%;
+        transform: translateY(60px);
+        -webkit-transform: translateY(60px);
+        -moz-transform: translateY(60px);
+        -ms-transform: translateY(60px);
+        -o-transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        filter: none;
+        -webkit-filter: none;
+        line-height: 160%;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes scaleDelay {
+    from {
+        opacity: 0;
+        transform: scale(0.1) translateY(30px);
+        -webkit-transform: scale(0.1) translateY(30px);
+        -moz-transform: scale(0.1) translateY(30px);
+        -ms-transform: scale(0.1) translateY(30px);
+        -o-transform: scale(0.1) translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        -webkit-transform: scale(1) translateY(0);
+        -moz-transform: scale(1) translateY(0);
+        -ms-transform: scale(1) translateY(0);
+        -o-transform: scale(1) translateY(0);
+        transform-origin: center;
+    }
+
+}
+
+@keyframes bgShift {
+    from {
+        left: 0;
+        background-attachment: fixed;
+        background-size: 110% auto;
+    }
+
+    to {
+        background-size: 100% auto;
+        left: 13.75vw;
+        background-attachment: fixed;
+    }
+
 
 }
 
