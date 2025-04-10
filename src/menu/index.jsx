@@ -1,3 +1,8 @@
-export default function Menu() {
-  return <h1 className="text-heading-xlarge font-Chillax-bold">Menu Page</h1>;
+import MenuTitle from "./components/menu-title";
+export default function MenuPage() {
+  return (
+    <aside className="bg-inverse h-screen">
+      <MenuTitle />
+    </aside>
+  );
 }
