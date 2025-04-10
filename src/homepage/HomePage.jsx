@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../common/components/logo";
 import HeroText from "./components/HeroText";
-import Menu from "../common/components/menu";
+import Menu from "../common/components/nav";
 const HomePage = () => {
   return (
     <section className="w-full min-h-screen bg-[#050505] flex flex-col py-[6.4vh] items-center relative">
