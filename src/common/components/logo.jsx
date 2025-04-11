@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 const text = "nique.";
 const splitText = text.split("");
-export default function Logo() {
+export default function Logo({ margin }) {
   const [isLetterVisible, setLetterVisibility] = useState(
     Array(splitText.length).fill(false)
   );
@@ -20,10 +20,15 @@ export default function Logo() {
         setTimeout(animateText, 200);
       }
     };
-    setTimeout(animateText, 2500)
+    setTimeout(animateText, 2500);
   }, []);
   return (
-    <h3 className="font-[Chillax-medium] text-white z-10 mb-[24.5vh] overflow-hidden">
+    <h3
+      className={clsx(
+        "font-[Chillax-medium] text-white z-10 overflow-hidden",
+        margin
+      )}
+    >
       {splitText.map((text, index) => {
         return (
           <span
