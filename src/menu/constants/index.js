@@ -4,3 +4,138 @@ export const menuPageNavItems = [
   { name: "Dinner", link: "#dinner" },
   { name: "Drinks", link: "#drinks" },
 ];
+
+export const menuPageChoiceItems = [
+  {
+    category: "Starters",
+    options: [
+      {
+        meal: "tomato toast",
+        isMealOfTheDay: false,
+        cancelledPrice: null,
+        price: "$29",
+        description: "Lorem ipsum dolor sit amet, consectetur",
+        image: "menu-page/tomato-toast.png",
+      },
+      {
+        meal: "noodle soup",
+        isMealOfTheDay: false,
+        cancelledPrice: "$8",
+        price: "$5",
+        description: "Lorem ipsum dolor sit amet, consectetur",
+        image: "menu-page/noodle-soup.png",
+      },
+      {
+        meal: "pumpkin soup",
+        isMealOfTheDay: true,
+        cancelledPrice: null,
+        price: "$5",
+        description: "Lorem ipsum dolor sit amet, consectetur",
+        image: "menu-page/pumpkin-soup.png",
+      },
+    ],
+  },
+  {
+    category: "Breakfast",
+    options: [
+      {
+        meal: "delicious pancakes",
+        isMealOfTheDay: false,
+        cancelledPrice: "$8",
+        price: "$5",
+        description: "Lorem ipsum dolor sit amet, consectetur",
+        image: "menu-page/delicious-pancakes.png",
+      },
+      {
+        meal: "sweet heaven",
+        isMealOfTheDay: false,
+        cancelledPrice: null,
+        price: "$5",
+        description: "Lorem ipsum dolor sit amet, consectetur",
+        image: "menu-page/sweet-heaven.png",
+      },
+      {
+        meal: "oatmeal spirit",
+        isMealOfTheDay: true,
+        cancelledPrice: null,
+        price: "$5",
+        description: "Lorem ipsum dolor sit amet, consectetur",
+        image: "menu-page/oatmeal-spirit.png",
+      },
+      {
+        meal: "avocado smash",
+        isMealOfTheDay: false,
+        cancelledPrice: null,
+        price: "$5",
+        description: "Lorem ipsum dolor sit amet, consectetur",
+        image: "menu-page/avocado-smash.png",
+      },
+    ],
+  },
+  {
+    category: "Dinner",
+    options: [
+      {
+        meal: "italian pizza",
+        isMealOfTheDay: false,
+        cancelledPrice: "$8",
+        price: "$5",
+        description: "Tomatillo, Baja Crema, Cabbage, Fried Okra",
+        image: "menu-page/italian-pizza.png",
+      },
+      {
+        meal: "sea curry",
+        isMealOfTheDay: false,
+        cancelledPrice: null,
+        price: "$5",
+        description: "Tomatillo, Baja Crema, Cabbage, Fried Okra",
+        image: "menu-page/sea-curry.png",
+      },
+      {
+        meal: "vegan burger",
+        isMealOfTheDay: true,
+        cancelledPrice: null,
+        price: "$5",
+        description: "Tomatillo, Baja Crema, Cabbage, Fried Okra",
+        image: "menu-page/vegan-burger.png",
+      },
+      {
+        meal: "noodle bowl",
+        isMealOfTheDay: false,
+        cancelledPrice: null,
+        price: "$5",
+        description: "Tomatillo, Baja Crema, Cabbage, Fried Okra",
+        image: "menu-page/noodle-bowl.png",
+      },
+    ],
+  },
+  {
+    category: "Drinks",
+    options: [
+      {
+        meal: "panthouse tonic",
+        isMealOfTheDay: false,
+        cancelledPrice: "$8",
+        price: "$5",
+        description: "Lorem ipsum dolor sit amet, consectetur",
+        image: "menu-page/panthouse-tonic.png",
+      },
+      {
+        meal: "apple breeze",
+        isMealOfTheDay: false,
+        cancelledPrice: null,
+        price: "$5",
+        description: "Lorem ipsum dolor sit amet, consectetur",
+        image: "menu-page/apple-breeze.png",
+      },
+      {
+        meal: "frenchman blitz",
+        isMealOfTheDay: false,
+        cancelledPrice: null,
+        price: "$5",
+        description: "Lorem ipsum dolor sit amet, consectetur",
+        image: "menu-page/frenchman-blitz.png",
+      },
+    ],
+  },
+];
