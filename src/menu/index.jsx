@@ -1,8 +1,12 @@
+import MenuBlock from "./components/menu-block";
 import MenuTitle from "./components/menu-title";
 export default function MenuPage() {
   return (
-    <aside className="">
-      <MenuTitle />
-    </aside>
+    <section className="bg-default-bg flex">
+      <aside>
+        <MenuTitle />
+      </aside>
+      <MenuBlock />
+    </section>
   );
 }
