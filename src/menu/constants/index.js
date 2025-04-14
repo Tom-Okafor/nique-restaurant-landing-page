@@ -81,7 +81,7 @@ export const menuPageChoiceItems = [
         cancelledPrice: "$8",
         price: "$5",
         description: "Tomatillo, Baja Crema, Cabbage, Fried Okra",
-        image: "menu-page/italian-pizza.png",
+        image: "menu-page/Italian-pizza.png",
       },
       {
         meal: "sea curry",
@@ -134,7 +134,7 @@ export const menuPageChoiceItems = [
         cancelledPrice: null,
         price: "$5",
         description: "Lorem ipsum dolor sit amet, consectetur",
-        image: "menu-page/frenchman-blitz.png",
+        image: "menu-page/Frenchman-blitz.png",
       },
     ],
   },
