@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { menuPageNavItems } from "../../constants";
 import { CurrentSectionContext } from "../../context";
 import clsx from "clsx";
+import { handleMenuListNavigation } from "../../utils/handleScrollToSection";
 
 export default function MenuPageHeader() {
   const { currentSection, setCurrentSection } = useContext(
@@ -11,17 +12,7 @@ export default function MenuPageHeader() {
     evt.preventDefault();
     if (currentSection !== index) {
       setCurrentSection(index);
-      const elementId = id.slice(1, id.length);
-      const newSection = document.getElementById(elementId);
-      const scrollContainer = document.getElementById("menu-block");
-      const marginTop = 120;
-      const portionScrolledY = scrollContainer.scrollTop;
-      const sectionTop =
-        Math.ceil(newSection.getBoundingClientRect().top) +
-        portionScrolledY -
-        marginTop;
-      console.log(sectionTop);
-      scrollContainer.scrollTo({ top: sectionTop, behavior: "smooth" });
+      handleMenuListNavigation(id);
     }
   };
   return (
