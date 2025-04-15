@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 export function MenuList() {
   return (
-    <section className="w-full flex flex-col items-start gap-[clamp(48px,9.6vh,96px)] py-20 px-[min(5.714vw,96px)]">
+    <section className="w-full flex flex-col items-start gap-[96px] py-20 px-[min(5.714vw,96px)]">
       {menuPageChoiceItems.map((item, index) => {
         return (
           <section
@@ -31,7 +31,7 @@ export function MenuList() {
                   />
                   <div className="w-full flex flex-col gap-1">
                     <MenuItemNameAndPrice option={option} />
-                    <p className="text-default-size text-muted2 font-Chillax-regular">
+                    <p className="text-default-size text-muted2 font-Chillax-light">
                       {option.description}
                     </p>
                   </div>
