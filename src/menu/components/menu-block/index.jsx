@@ -1,21 +1,23 @@
 import { MenuList } from "../menu-list";
 import MenuPageHeader from "../menuPageHeader";
 import { CurrentSectionContext } from "../../context";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { setCurrentMenuListSection } from "../../utils/menuListScrollHandler";
 export default function MenuBlock() {
   const [currentSection, setCurrentSection] = useState(0);
-  const scrollHandler = () => {
-    const newSection = setCurrentMenuListSection(currentSection);
-    newSection !== currentSection && setCurrentSection(newSection);
-  };
+  const scrollHandler = useCallback(() => {
+    setCurrentSection((prev) => {
+      const newSection = setCurrentMenuListSection(prev);
+      return newSection !== prev ? setCurrentSection(newSection) : prev;
+    });
+  }, []);
   useEffect(() => {
     window.addEventListener("resize", scrollHandler);
 
     return () => {
       window.removeEventListener("resize", scrollHandler);
     };
-  });
+  }, [scrollHandler]);
 
   return (
     <section
