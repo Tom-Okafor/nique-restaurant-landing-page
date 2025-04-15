@@ -6,7 +6,7 @@ export default function PageTitle({ width, mainText, subText, image }) {
   return (
     <section
       className="h-screen bg-default-bg py-[6.4vh] flex flex-col items-center justify-between bg-cover bg-no-repeat"
-      style={{ width, backgroundImage: image }}
+      style={{ width, backgroundImage: image, backgroundSize: '50vw 100%' }}
     >
       <Logo />
       <div className="text-center my-auto">
