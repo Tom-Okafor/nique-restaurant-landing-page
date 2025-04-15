@@ -4,7 +4,12 @@ export default function MenuPage() {
   return (
     <section className="bg-default-bg flex">
       <aside>
-        <PageTitle width="50vw" subText="Check Out" mainText="Our Menus" />{" "}
+        <PageTitle
+          width="50vw"
+          subText="Check Out"
+          mainText="Our Menus"
+          image="url('menu-main.png')"
+        />{" "}
       </aside>
       <MenuBlock />
     </section>
