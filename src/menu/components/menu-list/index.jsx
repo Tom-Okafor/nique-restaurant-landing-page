@@ -9,7 +9,7 @@ export function MenuList() {
           <section
             key={index}
             id={item.category.toLowerCase()}
-            className="flex flex-col gap-8"
+            className="flex flex-col gap-8 menu-category"
           >
             <p className="text-heading-small font-bitter-rose text-primary font-normal capitalize">
               {item.category}

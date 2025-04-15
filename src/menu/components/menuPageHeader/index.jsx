@@ -25,7 +25,7 @@ export default function MenuPageHeader() {
     }
   };
   return (
-    <header className="w-full flex justify-center items-center sticky top-0 backdrop-blur-xs backdrop-saturate-200 backdrop-contrast-200 z-30">
+    <header className="w-full flex justify-center items-center sticky top-0 backdrop-blur-sm backdrop-saturate-200 backdrop-contrast-200 z-30">
       <nav className="flex items-center gap-[clamp(18px,2.857vw,48px)] py-6 px-[clamp(16px,1.905vw,32px)]">
         {menuPageNavItems.map((navItem, index) => (
           <a
