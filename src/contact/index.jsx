@@ -1,17 +1,16 @@
 import PageTitle from "../common/components/page-title";
-import FormBlock from "./components/form-block";
-export default function Reservation() {
+
+export default function Contact() {
   return (
     <section className="bg-default-bg flex">
       <aside>
         <PageTitle
           width="50vw"
-          subText="Book A Table"
-          mainText="Reservation"
+          subText="Contact"
+          mainText="Get in Touch"
           image="url('reservation.png')"
         />
       </aside>
-      <FormBlock />
     </section>
   );
 }
