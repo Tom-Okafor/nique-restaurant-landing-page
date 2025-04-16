@@ -186,6 +186,33 @@
 
 }
 
+
+.restaurant-image-slider {
+    animation: slideImage 1s linear both;
+    -webkit-animation: slideImage 1s linear both;
+    animation-timeline: scroll();
+    animation-range-start: 0;
+    animation-range-end: 100%;
+}
+
+@keyframes slideImage {
+    from {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-250vw);
+        -webkit-transform: translateX(-250vw);
+        -moz-transform: translateX(-250vw);
+        -ms-transform: translateX(-250vw);
+        -o-transform: translateX(-250vw);
+    }
+}
+
 @layer components {
     h2 {
         font-size: clamp(20px, 2.381vw, 40px);
