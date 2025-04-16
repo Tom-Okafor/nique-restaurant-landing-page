@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import clsx from "clsx";
 
 const text = "nique.";
@@ -22,12 +24,17 @@ export default function Logo({ margin }) {
     };
     setTimeout(animateText, 2500);
   }, []);
+
+  const navigate = useNavigate();
   return (
     <h3
       className={clsx(
-        "font-[Chillax-medium] text-white z-10 overflow-hidden",
+        "font-[Chillax-medium] text-white z-10 overflow-hidden cursor-pointer",
         margin
       )}
+      onClick={() => {
+        navigate("/");
+      }}
     >
       {splitText.map((text, index) => {
         return (

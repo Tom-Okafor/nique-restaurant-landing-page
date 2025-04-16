@@ -13,7 +13,7 @@ export default function MenuBar({
           src="time-line.svg"
           alt="icon"
           aria-hidden="true"
-          className="h-[2vh]"
+          className="h-5"
         />
       </div>
       <div className="flex h-full items-center">
