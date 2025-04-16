@@ -5,7 +5,10 @@ import FormButton from "../../../common/components/form-button";
 
 export default function Form() {
   return (
-    <form action="/" className="flex flex-col items-center gap-[min(48px,4.8vh)] w-full">
+    <form
+      action=""
+      className="flex flex-col items-center gap-[min(48px,4.8vh)] w-full"
+    >
       {formInputsBlockOne.map((inputs, index) => (
         <InputBlock key={index} inputs={inputs} />
       ))}

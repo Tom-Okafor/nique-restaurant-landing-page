@@ -1,4 +1,5 @@
 import PageTitle from "../common/components/page-title";
+import ContactBlock from "./components/contact-block";
 
 export default function Contact() {
   return (
@@ -11,6 +12,7 @@ export default function Contact() {
           image="url('reservation.png')"
         />
       </aside>
+      <ContactBlock />
     </section>
   );
 }
