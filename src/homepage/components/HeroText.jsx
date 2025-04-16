@@ -1,7 +1,7 @@
 import { AnimatedText } from "../../common/components/animated-text";
 export default function HeroText() {
   return (
-    <section className="flex flex-col gap-[clamp(16px,3.2vh,32px)] items-center my-auto z-10 mb-[20.8vh]">
+    <section className="flex flex-col gap-[clamp(16px,3.2vh,32px)] items-center my-auto z-10">
       <h1 className="flex flex-col items-center">
         <span className="text-primary text-heading-medium-italic font-normal font-bitter-rose flex overflow-y-hidden gap-4 leading-[100%]">
           <AnimatedText text={"The pure taste of".split(" ")} delay={0} />
