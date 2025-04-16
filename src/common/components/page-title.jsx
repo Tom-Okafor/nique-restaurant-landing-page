@@ -5,7 +5,7 @@ import { AnimatedText } from "./animated-text";
 export default function PageTitle({ width, mainText, subText, image }) {
   return (
     <section
-      className="h-screen bg-default-bg py-[6.4vh] flex flex-col items-center justify-between bg-cover bg-no-repeat"
+      className="h-screen bg-default-bg py-[6.4vh] flex flex-col items-center justify-between bg-cover bg-no-repeat sticky top-0"
       style={{ width, backgroundImage: image, backgroundSize: '50vw 100%' }}
     >
       <Logo />
