@@ -3,6 +3,7 @@ import Logo from "../common/components/logo";
 import Menu from "../common/components/nav.jsx";
 import { classBlocks } from "./constants/index.js";
 import { NavLink } from "react-router-dom";
+import clsx from "clsx";
 
 export default function Classes() {
   const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
@@ -18,7 +19,6 @@ export default function Classes() {
   };
 
   const handleMouseMove = (event) => {
-
     if (
       event.target.tagName === "H2" ||
       event.target.tagName === "P" ||
@@ -65,7 +65,9 @@ export default function Classes() {
         className="size-[100px] flex justify-center items-center bg-primary-bg text-sm text-inverse font-Chillax-medium rounded-full uppercase fixed z-10 pointer-events-none duration-200 mix-blend-difference"
         style={{ top: `${y}px`, left: `${x}px` }}
       >
-        {isMouseOverText ? "" : "explore"}
+        <span className={clsx("duration-500", isMouseOverText ? "opacity-0" : "opacity-100")}>
+          explore
+        </span>
       </div>
     </main>
   );
