@@ -6,10 +6,8 @@ import { setCurrentMenuListSection } from "../../utils/menuListScrollHandler";
 export default function MenuBlock() {
   const [currentSection, setCurrentSection] = useState(0);
   const scrollHandler = useCallback(() => {
-    setCurrentSection((prev) => {
-      const newSection = setCurrentMenuListSection(prev);
-      return newSection !== prev ? setCurrentSection(newSection) : prev;
-    });
+    const newSection = setCurrentMenuListSection();
+    setCurrentSection(newSection);
   }, []);
   useEffect(() => {
     window.addEventListener("resize", scrollHandler);
