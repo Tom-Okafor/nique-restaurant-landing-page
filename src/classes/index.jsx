@@ -63,9 +63,18 @@ export default function Classes() {
       </section>
       <div
         className="size-[100px] flex justify-center items-center bg-primary-bg text-sm text-inverse font-Chillax-medium rounded-full uppercase fixed z-10 pointer-events-none duration-200 mix-blend-difference"
-        style={{ top: `${y}px`, left: `${x}px` }}
+        style={{
+          top: `${y}px`,
+          left: `${x}px`,
+          transitionTimingFunction: "cubic-bezier(0.3, 0.7, 1, 1.3)",
+        }}
       >
-        <span className={clsx("duration-500", isMouseOverText ? "opacity-0" : "opacity-100")}>
+        <span
+          className={clsx(
+            "duration-500",
+            isMouseOverText ? "opacity-0" : "opacity-100"
+          )}
+        >
           explore
         </span>
       </div>
