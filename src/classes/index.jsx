@@ -45,7 +45,7 @@ export default function Classes() {
         {classBlocks.map((block) => (
           <NavLink
             key={block.title}
-            to="/classes"
+            to={`/class/${block.id}`}
             className="w-[34vw] h-dvh flex flex-col gap-2 items-center justify-center text-center bg-cover"
             style={{ backgroundImage: `url(${block.image})` }}
           >
