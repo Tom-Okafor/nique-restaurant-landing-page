@@ -32,7 +32,7 @@ export function AnimatedText({ text, delay }) {
             className="inline-block duration-500 ease-out"
             style={{
               transform: isSpanHidden[index]
-                ? "translateY(0)"
+                ? "translateY(-5%)"
                 : "translateY(105%)",
             }}
           >

@@ -10,7 +10,7 @@ export default function MenuBar({
     <div className="flex gap-0.5 items-center">
       <div className="h-[4.8vh] max-h-12 w-[2.857vw] max-w-12 flex items-center justify-center">
         <img
-          src="time-line.svg"
+          src="/time-line.svg"
           alt="icon"
           aria-hidden="true"
           className="h-5"
