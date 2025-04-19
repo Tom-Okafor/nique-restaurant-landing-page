@@ -189,27 +189,27 @@
 
 @layer components {
     h2 {
-        font-size: clamp(20px, 2.381vw, 40px);
+        font-size: 40px;
         line-height: 100%;
     }
 
     h3 {
-        font-size: clamp(18px, 1.905vw, 32px);
+        font-size: 32px;
         line-height: 100%;
     }
 
     h4 {
-        font-size: clamp(16px, 1.43vw, 24px);
+        font-size: 24px;
         line-height: 100%;
     }
 
     h5 {
-        font-size: clamp(16px, 1.19vw, 20px);
+        font-size: 20px;
         line-height: 100%;
     }
 
     h6 {
-        font-size: clamp(14px, 1.107vw, 18px);
+        font-size: 18px;
         line-height: 160%;
     }
 }
@@ -265,7 +265,7 @@
         -moz-transform: translateX(-71vw);
         -ms-transform: translateX(-71vw);
         -o-transform: translateX(-71vw);
-}
+    }
 }
 
 .text-block-one,
