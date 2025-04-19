@@ -1,10 +1,8 @@
-import { classBlocks } from "../classes/constants";
-import { useParams } from "react-router-dom";
+import UseIdParameter from "./hooks/useIdParamater";
 import PageTitle from "../common/components/page-title";
 
 export default function Class() {
-  const id = useParams().id;
-  const currentClass = classBlocks.find((classBlock) => classBlock.id === id);
+  const currentClass = UseIdParameter();
   return (
     <main className="flex bg-default-bg">
       <aside>
