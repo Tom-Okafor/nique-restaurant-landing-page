@@ -24,22 +24,22 @@ export function AnimatedText({ text, delay }) {
   }, [text, delay]);
 
   return (
-    <>
+    <div className="max-w-[12ch]">
       {text.map((eachText, index) => {
         return (
           <div
             key={index}
-            className="inline-block duration-500 ease-out"
+            className="inline-block duration-500 ease-out mr-3"
             style={{
               transform: isSpanHidden[index]
                 ? "translateY(-5%)"
-                : "translateY(105%)",
+                : "translateY(205%)",
             }}
           >
             {eachText}
           </div>
         );
       })}
-    </>
+    </div>
   );
 }
