@@ -1,6 +1,7 @@
 import ClassDescription from "./class-description";
 import ClassDetails from "./class-details";
 import ClassMenu from "./class-menu";
+import ClassTeacher from "./class-teacher";
 
 export default function ClassMainBlock() {
   return (
@@ -9,6 +10,7 @@ export default function ClassMainBlock() {
         <ClassDescription />
         <ClassDetails />
         <ClassMenu />
+        <ClassTeacher />
       </section>
       {/* FOOTER HERE */}
     </main>

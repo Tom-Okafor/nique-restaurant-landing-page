@@ -20,3 +20,18 @@ export const classMenu = [
     image: "/menu-page/sea-curry.png",
   },
 ];
+
+export const classIcons = [
+  {
+    name: "instagram page",
+    image: "/instagram.svg",
+  },
+  {
+    name: "Facebook page",
+    image: "/facebook.svg",
+  },
+  {
+    name: "Twitter page",
+    image: "/twitter.svg",
+  },
+];
