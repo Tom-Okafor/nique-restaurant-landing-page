@@ -1,5 +1,3 @@
-import UseIdParameter from "../../../hooks/useIdParamater";
-
 export default function ClassDescription() {
   return (
     <section className="flex flex-col w-full gap-8">
