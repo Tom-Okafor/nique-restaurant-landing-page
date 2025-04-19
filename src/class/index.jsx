@@ -1,5 +1,6 @@
 import UseIdParameter from "./hooks/useIdParamater";
 import PageTitle from "../common/components/page-title";
+import ClassMainBlock from "./components/class-main-block";
 
 export default function Class() {
   const currentClass = UseIdParameter();
@@ -13,6 +14,7 @@ export default function Class() {
           image={`url(/${currentClass.image})`}
         />
       </aside>
+      <ClassMainBlock />
     </main>
   );
 }
