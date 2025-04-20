@@ -22,9 +22,9 @@ export default function Footer() {
               <div className="flex flex-col gap-4" key={index}>
                 <NavLink
                   to={`/${link}`}
-                  className="text-muted2 text-default-size font-Chillax-regular capitalize"
+                  className="text-muted2 text-default-size font-Chillax-regular capitalize hover:text-primary duration-300"
                 >
-                  {link === 'reservation' ? 'book a table' : link}
+                  {link === "reservation" ? "book a table" : link}
                 </NavLink>
               </div>
             ))}
