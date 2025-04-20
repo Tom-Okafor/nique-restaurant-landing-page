@@ -4,7 +4,7 @@ export const buttonClasses =
 export const footerLinkBlocks = [
   {
     title: "pages",
-    blockOne: [
+    links: [
       "menu",
       "restaurant",
       "classes",
@@ -15,7 +15,7 @@ export const footerLinkBlocks = [
     ],
   },
   {
-    title: "utility",
-    blockTwo: ["styleguide", "licensing", "404 page"],
+    title: "utility pages",
+    links: ["styleguide", "licensing", "404 page"],
   },
 ];
