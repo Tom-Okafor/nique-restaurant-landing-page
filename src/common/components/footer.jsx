@@ -24,7 +24,7 @@ export default function Footer() {
                   to={`/${link}`}
                   className="text-muted2 text-default-size font-Chillax-regular capitalize"
                 >
-                  {link}
+                  {link === 'reservation' ? 'book a table' : link}
                 </NavLink>
               </div>
             ))}

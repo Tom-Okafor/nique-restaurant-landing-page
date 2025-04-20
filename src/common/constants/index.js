@@ -8,7 +8,7 @@ export const footerLinkBlocks = [
       "menu",
       "restaurant",
       "classes",
-      "book a table",
+      "reservation",
       "contact",
       "blog",
       "shop",
