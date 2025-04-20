@@ -6,7 +6,7 @@ export default function Footer() {
     <section className="w-[min(40.476vw,680px)] flex justify-between">
       <section className="flex flex-col gap-8">
         <h3 className="text-default font-Chillax-medium">nique.</h3>
-        <p className="flex flex-col text-sm text-muted2 font-Chillax-light">
+        <p className="flex flex-col text-sm text-muted2 font-Chillax-light gap-1">
           <span>By Tom Okafor</span>
           <span>Built with React</span>
           <span>Design By Pawel Gola</span>

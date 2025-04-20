@@ -2,6 +2,7 @@ import ClassDescription from "./class-description";
 import ClassDetails from "./class-details";
 import ClassMenu from "./class-menu";
 import ClassTeacher from "./class-teacher";
+import Footer from "../../../common/components/footer";
 
 export default function ClassMainBlock() {
   return (
@@ -13,6 +14,7 @@ export default function ClassMainBlock() {
         <ClassTeacher />
       </section>
       {/* FOOTER HERE */}
+      <Footer />
     </main>
   );
 }
