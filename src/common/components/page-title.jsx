@@ -2,7 +2,13 @@ import Logo from "./logo";
 import Menu from "./nav";
 import { AnimatedText } from "./animated-text";
 
-export default function PageTitle({ width, mainText, subText, image }) {
+export default function PageTitle({
+  width,
+  mainText,
+  subText,
+  image,
+  position,
+}) {
   return (
     <section
       className="h-screen bg-default-bg py-[6.4vh] flex flex-col items-center justify-between bg-cover bg-no-repeat sticky top-0"
@@ -10,7 +16,7 @@ export default function PageTitle({ width, mainText, subText, image }) {
         width,
         backgroundImage: image,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: position ? position : "center",
       }}
     >
       <Logo />
