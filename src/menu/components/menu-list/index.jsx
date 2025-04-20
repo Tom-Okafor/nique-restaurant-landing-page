@@ -1,3 +1,4 @@
+import Footer from "../../../common/components/footer";
 import { menuPageChoiceItems } from "../../constants";
 import clsx from "clsx";
 
@@ -22,6 +23,7 @@ export function MenuList() {
           </section>
         );
       })}
+      <Footer />
     </section>
   );
 }
