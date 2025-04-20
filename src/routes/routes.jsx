@@ -6,6 +6,7 @@ import Restaurant from "../restaurant";
 import HomePage from "../homepage/HomePage";
 import Contact from "../contact";
 import Class from "../class";
+import Shop from "../shop";
 
 export default function AppRoutes() {
   return (
@@ -17,6 +18,7 @@ export default function AppRoutes() {
       <Route path="/restaurant" element={<Restaurant />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/class/:id" element={<Class />} />
+      <Route path="/shop" element={<Shop />} />
     </Routes>
   );
 }
