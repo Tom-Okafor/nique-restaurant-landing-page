@@ -19,7 +19,7 @@ export default function MenuBlock() {
 
   return (
     <section
-      className="w-full h-screen overflow-auto scroll-smooth"
+      className="w-full h-screen overflow-auto"
       id="menu-block"
       onScroll={scrollHandler}
     >

@@ -6,7 +6,7 @@ import Footer from "../../../common/components/footer";
 
 export default function ClassMainBlock() {
   return (
-    <main className="w-[50vw] py-24 flex flex-col items-center gap-20 scroll-auto">
+    <main className="w-[50vw] py-24 flex flex-col items-center gap-20">
       <section className="flex flex-col gap-20 w-[min(33.333vw,560px)]">
         <ClassDescription />
         <ClassDetails />
