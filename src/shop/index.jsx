@@ -1,4 +1,5 @@
 import PageTitle from "../common/components/page-title";
+import ShopBlock from "./components/shop-block";
 
 export default function Shop() {
   return (
@@ -12,6 +13,7 @@ export default function Shop() {
           position="center bottom"
         />
       </aside>
+      <ShopBlock />
     </main>
   );
 }
